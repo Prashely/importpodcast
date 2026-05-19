@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <!-- Links the external CSS file for styling -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Sets the title of the web page, which appears in the browser tab -->
     <title>Signup Form</title>
@@ -91,23 +91,23 @@ a {
     <h1>Signup Form</h1>
     <div class="label_input">
         <label for="fname">First Name:</label>
-        <input type="text" id="fname" name="entry.20089888" required />
+        <input type="text" id="fname" placeholder="Enter your full name"  required /><!--name="entry.20089888"-->
     </div>
     <div class="label_input">
         <label for="lname">Last Name:</label>
-        <input type="text" id="lname" name="entry.1785267775" required />
+        <input type="text" id="lname" placeholder="Enter your last name" required /><!--name="entry.1785267775"-->
     </div>
     <div class="label_input">
         <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="Enter your email address" name="entry.913077170" required />
+        <input type="email" id="email" placeholder="Enter your email address" required /><!--name="entry.913077170"-->
     </div>
     <div class="label_input">
         <label for="phone">Phone Number:</label>
-        <input type="tel" id="phone" name="entry.891389050" required />
+        <input type="tel" id="phone" placeholder="000 000 0000" required /><!--name="entry.891389050"-->
     </div>
     <div class="label_input">
         <label for="age">Age</label>
-        <select id="age" name="entry.1053084225">
+        <select id="age" ><!--name="entry.1053084225"-->
             <option value="10-18">10-18</option>
             <option value="18-25">18-25</option>
             <option value="26-35">26-35</option>
@@ -127,28 +127,14 @@ a {
             <input
                     type="radio"
                     id="female"
-                    name="entry.972700002"
                     value="female"
                     required
-            />
+            /><!--name="entry.972700002"-->
         </div>
     </div>
-    <button onclick="signUpForm()">Send</button>
+    <button onclick="Js/signUpForm()">Send</button>
 </form>
 
-<script>
-
-    function signUpForm(){
-        const firstName = document.getElementById("fname").vaalue;
-        const lastName = document.getElementById("lname").value;
-
-        const envelop = {
-            nameFirst : firstName
-            nameLast : lastName
-        }
-
-    }
-
-</script>
+<link rel="Javascript" href="Js/signUpForm.js">
 </body>
 </html>

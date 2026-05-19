@@ -1,0 +1,31 @@
+ .glass-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(10px);
+      }
+      .service-card:hover {
+        transform: translateY(-5px);
+        transition: all 0.3s ease;
+      }
+      /* Mobile menu toggle classes */
+      #mobile-menu.hidden {
+        display: none;
+      }
+
+      /* Responsive video wrapper — maintains 16:9 based on width */
+      .video-wrapper {
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+        overflow: hidden;
+        border-radius: 1rem;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+      }
+      .video-wrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
